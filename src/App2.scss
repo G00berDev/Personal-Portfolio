@@ -92,8 +92,8 @@ span {
 
 .glass-morphism-text-box {
     position: fixed;
-    bottom: 40px;
-    left: 40px;
+    bottom: calc(50% - 350px);
+    left: calc(50% - 400px);
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     border-radius: 10px;
@@ -104,14 +104,12 @@ span {
     font-size: 18px;
     font-family: 'Fleshandblood', sans-serif;
     transition: transform 1.2s ease-in-out;
-    pointer-events: auto; /* Enable pointer events for hover */
+    pointer-events: auto;
     }
     
     .glass-morphism-text-box:hover {
         transform: scale(2);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-        left: calc(150px + 10px); /* Adjust left position for centering */
-        bottom: calc(80px + 10px); /* Adjust bottom position for centering */
     }
     
     .glass-morphism-text-box:hover p {
