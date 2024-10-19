@@ -1,66 +1,73 @@
 header {
   position: relative;
   top: -75px;
-  margin-bottom: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
-    background: rgba(0, 0, 0, 0.1);;
-    backdrop-filter: blur(4px);
-    border-bottom: 2px solid rgba(149, 0, 255, 0.6);
-    z-index: 1000;
-    font-size: 20px;
-    color: #fff;
-    transition: transform 0.3s ease;
-    padding: 20px 40px;
-    overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border-bottom: 2px solid #ce15f8;
+  z-index: 1000;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  padding: 20px 40px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
 
-    .navbar ul {
-      transform: translateY(35px);
-      list-style: none;
-      display: flex;
-      gap: 30px;
-  }
-  
-  .navbar a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-      font-family: 'Fleshandblood', sans-serif;
-  }
+nav a {
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
-  .navbar a:hover{
-    color: rgb(195, 0, 255);
-    transform: scale(1.1);
-  }
+nav a:hover {
+  color: rgb(195, 0, 255);
+  transform: scale(1.1);
+}
 
-  .field {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    &:last-child {
-      justify-content: end;
-    }
-  }
+#marker {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 90px;
+  border-bottom: 5px solid #ce15f8;
+  background: linear-gradient(0deg, #ce15f837, transparent);
+  transition: 0.5s;
+  pointer-events: none;
+  filter: drop-shadow(0 5px 25px);
+}
 
-  img {
-    height: 7em;
-    transform: translateY(35px);
-  }
+.field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
-  .tools {
-    button {
-      padding: 8px 12px;
-      border-radius: 8px;
-      border: 1px solid white;
-      cursor: pointer;
-      transform: translateY(35px);
+.field:last-child {
+  justify-content: flex-end; /* Improved naming */
+}
 
-      span {
-        font-family: poppins;
-        font-weight: 700;
-      } 
-    }
-  }
+img {
+  height: 7em;
+  transform: translateY(35px);
+}
+
+.tools button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+  transform: translateY(35px);
+}
+
+.tools button span {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
 }

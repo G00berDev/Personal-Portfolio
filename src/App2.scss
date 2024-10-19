@@ -2,6 +2,97 @@
 display: flex;
 flex-direction: column;
 min-height: 100vh;
+}
+
+.container {
+display: flex;
+gap: 50px;
+}
+
+.box {
+background: rgba(0, 0, 0, 0.6);;
+position: relative;
+bottom: 3rem;
+left: 3rem;
+width: 300px;
+height: 400px;
+border: 2px solid #9f61cc;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+padding: 30px;
+color: #ce15f8;
+overflow: hidden;
+transition: transform 0.3s ease-in-out; /* Smooth transition for the box */
+}
+
+.box span {
+position: absolute;
+display: block;
+width: 0;
+height: 0;
+border-radius: 50%;
+background: #ce15f8;
+transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Smooth hover effect */
+transform: translate(-50%, -50%);
+mix-blend-mode: difference;
+z-index: 10; /* Make sure the span is on top */
+}
+
+.box:hover {
+transform: scale(1.05); /* Slightly scale up the box on hover */
+}
+
+.box:hover span {
+width: 300px;
+height: 300px;
+z-index: 10;
+}
+
+.box2 {
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: -13rem;
+    right: -50rem;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #9f61cc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 30px;
+    color: #ce15f8;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the box */
+    }
+
+.box2 span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #ce15f8;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Smooth hover effect */
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    z-index: 10; /* Make sure the span is on top */
+    }
+    
+    .box2:hover {
+    transform: scale(1.05); /* Slightly scale up the box on hover */
+    }
+    
+    .box2:hover span {
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+    }
+
 
 .blob,
 .prof {
@@ -35,6 +126,7 @@ gap: 10px;
 cursor: none;
 pointer-events: none;
 bottom: 6rem;
+}
 
 .caption {
 position: relative;
@@ -88,41 +180,13 @@ div {
 span {
     font-size: 14px;
 }
-}
-
-.glass-morphism-text-box {
-    position: fixed;
-    bottom: calc(50% - 350px);
-    left: calc(50% - 400px);
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 2px solid rgba(149, 0, 255, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Fleshandblood', sans-serif;
-    transition: transform 1.2s ease-in-out;
-    pointer-events: auto;
-    }
-    
-    .glass-morphism-text-box:hover {
-        transform: scale(2);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
-    
-    .glass-morphism-text-box:hover p {
-    color: purple;
-    }
-}
 
 @keyframes fadeIn {
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-}
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
 }
 }
