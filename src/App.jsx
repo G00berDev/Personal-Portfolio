@@ -13,13 +13,12 @@ function App() {
         <main>
           <h1 className="caption">
             {'¯|_(ツ)_/¯'} Imagination <b>Creation</b> Hardwork <br />
-            Styrder Bateman
+            Styrder <b>Bateman</b>
           </h1>
           <span className="sub-caption">
             My 3D portfolio
           </span>
           <div className="blob">
-            <img src={lob} alt="Abstract Blob Design" loading="lazy" width="400" height="400" />
           </div>
         </main>
       </div>

@@ -1,9 +1,9 @@
 .spline-scene8 {
-    position: absolute; /* Keeps the background in place relative to the viewport */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -100;
-    overflow-y: auto; /* Enables vertical scrolling within the background */
+    overflow-y: auto;
 }
