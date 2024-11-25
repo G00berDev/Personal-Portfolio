@@ -17,7 +17,7 @@ function App() {
         <main>
           <h1 className="caption">
             {'¯|_(ツ)_/¯'} Imagination <b>Creation</b> Hardwork <br />
-            Styrder <b>Bateman</b>
+            Stryder <b>Bateman</b>
           </h1>
           <span className="sub-caption">My 3D portfolio</span>
           <div className="blob"></div>

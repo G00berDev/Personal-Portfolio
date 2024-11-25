@@ -6,7 +6,7 @@ return (
 <footer>
     <div className="container">
     <div className="sec aboutus">
-        <h2>About Us</h2>
+        <h2>About Me</h2>
         <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
         ratione qui esse sed illo nam, sint ut exercitationem quam nesciunt.
@@ -52,19 +52,19 @@ return (
         </ul>
     </div>
     <div className="sec quicklinks">
-        <h2>Shop</h2>
+        <h2>Intersting Facts</h2>
         <ul>
         <li>
-            <a href="#">Men</a>
+            <a href="#">The Color Purple</a>
         </li>
         <li>
-            <a href="#">Women</a>
+            <a href="#">Space</a>
         </li>
         <li>
-            <a href="#">Kids</a>
+            <a href="#">The lotus Flower</a>
         </li>
         <li>
-            <a href="#">Shoes</a>
+            <a href="#">Human attention span</a>
         </li>
         </ul>
     </div>
