@@ -76,7 +76,7 @@ return (
             <i className="fa-solid fa-phone"></i>
             </span>
             <p>
-            <a href="tel:+12345678900">+1 234 567 8900</a>
+            <a href="tel:+12345678900">+1 602 980 3952</a>
             </p>
         </li>
         <li>
@@ -84,7 +84,7 @@ return (
             <i className="fa-solid fa-envelope"></i>
             </span>
             <p>
-            <a href="mailto:knowmore@emailto.meee">knowmore@emailto.meee</a>
+            <a href="mailto:knowmore@emailto.meee">stryderbateman@gmail.com</a>
             </p>
         </li>
         </ul>

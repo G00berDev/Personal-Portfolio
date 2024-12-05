@@ -1,0 +1,59 @@
+.profile-card {
+width: 300px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+text-align: center;
+font-family: 'Arial', sans-serif;
+transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+transform: translateY(-10px);
+}
+
+.profile-card-content {
+padding: 20px;
+}
+
+.profile-image {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin-bottom: 15px;
+}
+
+.name {
+font-size: 1.5em;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+
+.description {
+font-size: 1em;
+color: #666;
+margin-bottom: 15px;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.social-links a {
+text-decoration: none;
+color: #0073b1;  /* LinkedIn color */
+font-size: 1.2em;
+transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+color: #ce15f8; /* Purple color on hover */
+}
+
+.social-links a i {
+margin-right: 5px;
+}
